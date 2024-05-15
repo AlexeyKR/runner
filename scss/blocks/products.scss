@@ -1,0 +1,351 @@
+.product {
+  background-position: top center;
+  background-repeat: no-repeat;
+  margin-top: 23px;
+  min-height: 959px;
+}
+
+@media screen and (min-width: 767.9px) {
+  .product {
+    background-image: url("../img/enigeWidthLine.jpg");
+  }
+}
+/*.product_line {
+  position: relative;
+  top: 16px;
+}*/
+
+.product h2 {
+  padding-top: 155px;
+  margin-top: 23px;
+}
+
+.product_block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product_capsule {
+  width: 25%;
+  padding-top: 74px;
+  padding-bottom: 43px;
+  position: relative;
+}
+
+.product_capsule.circle:after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 286px;
+  height: 286px;
+  background-image: url("../img/rounds1.svg");
+  top: 21px;
+  left: 37px;
+  pointer-events: none;
+  background-size: cover;
+  transform: rotate(45deg);
+  transition: 1s;
+  opacity: 0;
+}
+
+.product_capsule.circle::before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 286px;
+  height: 286px;
+  background-image: url("../img/rounds2.svg");
+  background-size: cover;
+  top: 21px;
+  left: 37px;
+  pointer-events: none;
+  transform: rotate(-45deg);
+  transition: 1s;
+  opacity: 0;
+}
+
+@media screen and (min-width: 1000px) {
+  .product_capsule.circle:hover:after {
+    transform: rotate(0deg);
+    transition: 1s;
+    opacity: 1;
+  }
+
+  .product_capsule.circle:hover:before {
+    transform: rotate(0deg);
+    transition: 1s;
+    opacity: 1;
+  }
+}
+
+
+.product_capsule_img {
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product_capsule_line {
+  width: 106px;
+  height: 3px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #003180;
+  margin-top: 30px;
+}
+
+.product_capsule_text {
+  font-size: 24px;
+  color: #003180;
+  text-align: center;
+  margin-top: 15px;
+
+}
+
+.eniges svg {
+  pointer-events: none;
+}
+
+/*.product_line_bottom {
+  margin-top: 74px;
+  position: relative;
+  top: 41px;
+}*/
+
+
+@media screen and (max-width: 1650px) {
+  .product {
+    background-size: contain;
+    background-position: top center;
+    min-height: 735px;
+    margin-top: 15px;
+  }
+  .aboutUs_img img {
+    width: 339px;
+  }
+  .aboutUs_img {
+    margin-top: 12px;
+  }
+  .product h2 {
+    margin-top: 14px;
+    padding-top: 110px;
+  }
+  .product_capsule {
+    width: 25%;
+    padding-top: 45px;
+  }
+  .product_capsule_img img {
+    transform: scale(0.7);
+  }
+  .product_capsule_line {
+    width: 74px;
+    height: 2px;
+    margin-top: 5px;
+  }
+  .product_capsule {
+    padding-bottom: 29px;
+  }
+  .product_capsule_text {
+    font-size: 17px;
+    margin-top: 12px;
+  }
+  .product_capsule.circle:after {
+    width: 204px;
+    height: 203px;
+    background-size: contain;
+    top: 18px;
+    left: 26px;
+  }
+  .product_capsule.circle:before {
+    width: 204px;
+    height: 203px;
+    background-size: contain;
+    top: 18px;
+    left: 26px;
+  }
+
+  .product {
+    display: flex;
+    align-items: center;
+  }
+  .product .container {
+    margin-top: -20px;
+  }
+  .product h2 {
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+
+}
+
+@media screen and (max-width: 1360px) {
+
+  .product .container {
+    margin-top: 30px;
+  }
+
+}
+@media screen and (max-width: 1200px) {
+  .product_capsule_img img {
+    transform: scale(0.6);
+  }
+  .product_capsule_img {
+    height: 65px;
+  }
+  .product_capsule_text {
+    font-size: 13px;
+    margin-top: 11px;
+  }
+  .product_capsule {
+    padding-top: 15px;
+  }
+  .product_capsule.circle:after {
+    width: 165px;
+    height: 165px;
+    background-size: contain;
+    top: -12px;
+    left: 39px;
+  }
+  .product_capsule.circle:before {
+    width: 165px;
+    height: 165px;
+    background-size: contain;
+    top: -12px;
+    left: 39px;
+  }
+}
+
+@media screen and (max-width: 991.9px) {
+  .product_capsule.circle:after {
+    left: 9px;
+  }
+  .product_capsule.circle:before {
+    left: 9px;
+  }
+  .product h2 {
+    margin-bottom: 0;
+  }
+  .product_capsule {
+    padding-bottom: 19px;
+  }
+
+  .product {
+
+  }
+
+}
+
+@media screen and (max-width: 767.9px) {
+  .product {
+    background-size: cover;
+    background-image: url("../img/enigeWidthLineMob.jpg");
+    position: relative;
+    background-position: top left;
+    margin-top: 98px;
+  }
+
+  .product:after {
+    position: absolute;
+    width: 90%;
+    height: 2px;
+    background-color: #003180;
+    bottom: -10px;
+    left: 5%;
+    content: '';
+  }
+
+  .product:before {
+    position: absolute;
+    width: 90%;
+    height: 2px;
+    background-color: #003180;
+    top: -10px;
+    left: 5%;
+    content: '';
+  }
+  .product_capsule {
+    width: 33%;
+  }
+  .product_block {
+    justify-content: center;
+  }
+
+  .product {
+    display: block;
+    min-height: 0;
+  }
+
+  .product h2 {
+    padding-top: 50px;
+    margin-bottom: 20px;
+  }
+  .product_capsule {
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+
+  .product_capsule.circle:after {
+    top: 0;
+  }
+  .product_capsule.circle:before {
+    top: 0;
+  }
+
+  .product_block {
+    padding-bottom: 50px;
+  }
+
+}
+
+@media screen and (max-width: 575.9px) {
+  .product_capsule {
+    width: 50%;
+  }
+  .product_capsule.circle:after {
+    left: -8px;
+  }
+  .product_capsule.circle:before {
+    left: -8px;
+  }
+  .product_capsule {
+    position: relative;
+    width: 150px;
+  }
+}
+
+/*SVG*/
+
+#Signature path {
+  fill: black;
+}
+.eniges path {
+  fill: none;
+  stroke: #003180;
+}
+.eniges path {
+  animation-duration: var(--duration);
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  stroke-dasharray: var(--length) var(--length);
+  stroke-dashoffset: var(--length);
+  animation-name: brush;
+  animation-delay: var(--delay);
+}
+@keyframes brush {
+  0% {
+    stroke-dashoffset: var(--length);
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.product_block svg {
+  display: none;
+}
+
+.product_block.startSVG svg {
+  display: block;
+}
